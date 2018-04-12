@@ -18,7 +18,7 @@ The config file specifies the following:
 2. We have to specify the location of the distributional vectors (x_i) in ```distributional_training_data``` as well as the location of the specialised vectors (x_o) in ```specialised_training_data```
 - The two training data files follow the standard format for word vectors (word dim_1 dim_2 ... dim_N), but note that they have to contain representations of exactly the same words and have exactly the same number of items.
 - We have provided toy sample training data files containing 5000 training pairs to illustrate the data format.
-3. The config file also specifies the hyperparameters of the LEAR procedure (set to their default values in ```config/experiment_parameters.cfg```).
+3. The config file also specifies the hyperparameters of the post-specialisation procedure (set to their default values in ```config/experiment_parameters.cfg```).
 - Right now, we provide support in the config file only for the best-performing max-margin loss function, but it should be fairly easy to customise the objective function using some of the Keras pre-built losses.
 
 ### Running Experiments
