@@ -1,7 +1,7 @@
 # Post-Specialisation
 Post-Specialisation: Retrofitting Vectors of Words Unseen in Lexical Resources (Vulić et al., NAACL-HLT 2018)
 
-This repository contains the code and data for the post-specialisation method in the NAACL-HLT 2018 paper. The method is implemented in Keras (Python 2.7) 
+This repository contains the code and data for the post-specialisation method in the NAACL-HLT 2018 paper. The method is implemented in [Keras](https://keras.io/) (Python 2.7) 
 
 Contact: Ivan Vulić (iv250@cam.ac.uk)
 
@@ -19,6 +19,7 @@ The config file specifies the following:
 - The two training data files follow the standard format for word vectors (word dim_1 dim_2 ... dim_N), but note that they have to be aligned and have exactly the same number of items (i.e., the representation of the same word in both files has to be on the same line).
 - We have provided toy sample training data files containing 1000 training pairs to illustrate the data format.
 3. The config file also specifies the hyperparameters of the LEAR procedure (set to their default values in ```config/experiment_parameters.cfg```).
+- Right now, we provide support in the config file only for the best-performing max-margin loss function, but it should be fairly easy to customise the objective function using some of the Keras pre-built losses.
 
 ### Running Experiments
 
