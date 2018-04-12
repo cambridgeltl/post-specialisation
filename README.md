@@ -16,8 +16,8 @@ The config file specifies the following:
 - In the default setup, we use SGNS vectors with bag-of-words contexts trained on Wikipedia, available [here](http://u.cs.biu.ac.il/~yogo/data/syntemb/bow2.words.bz2)
 * the location of the training data; training data contains word vectors (x_i, x_o) changed by the initial specialisation (i.e., seen words x)
 2. We have to specify the location of the distributional vectors (x_i) in ```distributional_training_data``` as well as the location of the specialised vectors (x_o) in ```specialised_training_data```
-- The two training data files follow the standard format for word vectors (word dim_1 dim_2 ... dim_N), but note that they have to be aligned and have exactly the same number of items (i.e., the representation of the same word in both files has to be on the same line).
-- We have provided toy sample training data files containing 1000 training pairs to illustrate the data format.
+- The two training data files follow the standard format for word vectors (word dim_1 dim_2 ... dim_N), but note that they have to contain representations of exactly the same words and have exactly the same number of items.
+- We have provided toy sample training data files containing 5000 training pairs to illustrate the data format.
 3. The config file also specifies the hyperparameters of the LEAR procedure (set to their default values in ```config/experiment_parameters.cfg```).
 - Right now, we provide support in the config file only for the best-performing max-margin loss function, but it should be fairly easy to customise the objective function using some of the Keras pre-built losses.
 
