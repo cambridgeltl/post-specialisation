@@ -29,7 +29,7 @@ Running the experiment loads the word vectors specified in the config file and l
 
 ### References
 
-The paper which introduces the LEAR procedure:
+The paper which introduces the Post-Specialisation procedure and the problem of specialising unseen words:
 ```
  @inproceedings{Vulic:2018,
   author    = {Ivan Vuli\'{c} and Goran Glava\v{s} and Nikola Mrk\v{s}i\'c} and Anna Korhonen,
